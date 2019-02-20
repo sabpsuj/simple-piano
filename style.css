@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-body {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(img/bgcat.jpg);
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #ffffff;
+    padding-top: 50px;
+    font-size: 60px;
+}
+
+.playground {
+    margin: 15vh auto;
+    width: 600px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .3);
+    text-align: center;
+}
+
+.piano-area {
+    display: flex;
+    align-content: flex-end;
+}
+
+.sound {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: calc(100%/8);
+    height: 250px;
+    background-color: rgba(255, 255, 255, .8);
+    margin: 0 2px;
+    box-shadow: inset -2px -2px 2px rgba(49, 49, 49, 0.8);
+    padding-bottom: 10px;
+}
+
+.sound > span, .hint > span {
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.hint {
+    position: absolute;
+    text-align: center;
+    padding: 4px;
+    top: 10px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, .3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
