@@ -4,13 +4,34 @@ function playSound(e) {
     sound.currentTime = 0;
     sound.play();
     key.classList.add('pressed');
-    console.log(e.keyCode);
 }
 
 function removeTransition(e) {
     this.classList.remove('pressed');
 }
 
+
+function toggleHint() {
+    const keyboard =  document.querySelector('.keyboard');
+    if(!keyboard.classList.contains('visible')) {
+     keyboard.classList.add('visible');   
+    } else {
+     keyboard.classList.remove('visible');  
+    }
+    
+}
+
+function hideHint() {
+    keyboard.classList.remove('visible');
+}
+
 window.addEventListener('keydown', playSound);
+
 let sounds = document.querySelectorAll('.sound');
 sounds.forEach(sound => sound.addEventListener('transitionend', removeTransition));
+
+let hint = document.querySelector('.hint');
+hint.addEventListener('click', toggleHint);   
+
+
+

@@ -69,4 +69,50 @@
     border-radius: 50%;
     border: 2px solid #ffffff;
     color: #ffffff;
+    cursor: pointer;
+}
+
+/* oldshool keyboard styling */
+
+.keyboard {
+    display: none;
+    flex-direction: column;
+    background-color: #c8cece;
+    border: 1px solid black;
+    width: 500px;
+    padding: 5px;
+    position: absolute;
+    top: 25px;
+    left: 25vw;
+}
+
+.visible {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.key {
+    background-color: #c2c2c2;
+    color: #1c1c1c;
+    font-family: 'Roboto Mono', monospace;
+    border: 1px solid #1c1c1c;
+    box-shadow: 1px 1px 0px;
+    /*width: -webkit-fill-available;*/
+    margin: 3px;
+    text-align: center;
+    padding: 2px 0;
+    flex-grow: 1;
+}
+
+.key-active {
+    background-color: #40c4c4;
+    box-shadow: -3px -3px 5px rgba(64, 196, 196, 0.514);
+} 
+
+.space {
+    flex-grow: 25;
 }
