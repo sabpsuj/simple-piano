@@ -9,7 +9,7 @@
     height: auto;
     background-image: url(img/bgcat.jpg);
     background-position: center top;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
