@@ -11,7 +11,8 @@ No instalation needed. Just tru the link below and play the music you like.
 ``` 'Play using keyboard'
 'Play clicking'
 'Play tapping'
-'See the hint above the keyboard to know the active keys allows you to play the piano' ```
+'See the hint above the keyboard to know the active keys allows you to play the piano' 
+```
 
 ## Have fun
 
